@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(243, 215, 236);
+    padding: 20px;
+}
+
+.container {
+    width: 60vw;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.header {
+    text-align: center;
+    margin: 10px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.main {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.addPair {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    align-items: flex-start;
+}
+
+.nameValueList {
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 290px;
+    height: 300px;
+    padding: 10%;
+    overflow-y: auto;
+}
+
+.nameValueList li {
+    list-style-type: none;
+}
+
+.labelNameValueList {
+    width: 100%;
+}
+
+.buttons button {
+    width: 100px;
+    margin-top: 18%;
+}
+
+.addPairButton {
+    width: 100px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.selected{
+    background-color: red;
+}
+
+@media screen and (max-width: 730px) {
+    .container {
+        height: 90vh;
+        width: 90vw;
+    }
+    .addPair {
+        flex-direction: column;
+        width: 100%;
+        padding: 8px;
+    }
+    .nameValue {
+        margin: 10px 0;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .main{
+        width: 250px;
+    }
+    .nameValueList {
+        width: 100%;
+    }
+    .buttons {
+        box-sizing: border-box;
+        flex-direction: row;
+        margin: 0 3px;
+        width: 100%;
+    }
+    .buttons button {
+        padding: 2px;
+        width: 90px;
+        margin: 10px 3px;
+    }
+}

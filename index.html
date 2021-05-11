@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pepperi Test Task Lavro</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <script defer src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="root">
+            <header class="header">Test </header>
+            <main class="main">
+                <label  for="nameValue" class="addPair">Name/Value Pair
+                    <input type="text" class="nameValue" id="nameValue" placeholder=" Name=Value">
+                    <button type="button" class="addPairButton" id="addPairButton">Add</button> 
+                </label>
+
+                <div class="flex-container">
+                    <div class="labelNameValueList">Name/Value Pair List
+                        <ul class="nameValueList"  id="nameValueList">
+
+                        </ul>
+                    </div>
+    
+                    <div class="buttons">
+                        <button type="button" id="sortByNameButton">Sort By Name</button>
+                        <button type="button" id="sortByValueButton">Sort by Value</button>
+                        <button type="button" id="deleteButton">Delete</button>
+                        <button type="button" id="clearButton">Clear all</button>
+                        <button type="button" id="showXmlButton">Show XML</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>
